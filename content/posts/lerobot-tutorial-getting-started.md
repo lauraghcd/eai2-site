@@ -3,7 +3,9 @@ title: "LeRobot Tutorial: Collect Data and Train Your First Robot Policy"
 date: 2026-04-07
 draft: false
 tags: ["LeRobot", "tutorial", "imitation learning", "Hugging Face", "hands-on"]
-categories: ["Tutorials"]
+categories: ["Tools & Frameworks"]
+series: ["From Zero to Robot Engineer"]
+weight: 4
 summary: "A step-by-step tutorial for using Hugging Face LeRobot to collect demonstration data, train an imitation learning policy, and deploy it on a simulated robot."
 ShowToc: true
 TocOpen: true

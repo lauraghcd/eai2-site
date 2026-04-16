@@ -3,7 +3,9 @@ title: "5 Robot Learning Frameworks You Should Know in 2026"
 date: 2026-04-11
 draft: false
 tags: ["frameworks", "LeRobot", "Isaac Lab", "ROS 2", "MuJoCo", "tools"]
-categories: ["Tutorials"]
+categories: ["Tools & Frameworks"]
+series: ["From Zero to Robot Engineer"]
+weight: 2
 summary: "A practical overview of the top robot learning frameworks in 2026 — what each does best, when to use it, and how they fit together."
 ShowToc: true
 TocOpen: true

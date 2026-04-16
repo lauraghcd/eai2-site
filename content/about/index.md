@@ -8,22 +8,28 @@ ShowToc: false
 
 ## What is EAI²?
 
-**EAI²** (Embodied AI Intelligence) is your comprehensive resource for everything related to embodied artificial intelligence — the field where AI meets the physical world.
+**EAI²** (Embodied AI Intelligence) is a knowledge hub for the field where AI meets the physical world — humanoid robots, VLA foundation models, robot learning, and the industry building it all.
 
-We cover:
+## How We Organize Knowledge
 
-- **Humanoid Robots** — From Tesla Optimus to Unitree H1, AgiBot, and Figure AI
-- **VLA Foundation Models** — GR00T, pi0, OpenVLA, and the latest vision-language-action architectures
-- **Robot Learning** — Reinforcement learning, imitation learning, sim-to-real transfer
-- **Industry Analysis** — Market trends, funding rounds, production scaling, and deployment stories
-- **Engineering Tutorials** — Hands-on guides for building with embodied AI frameworks
+We structure content around **five knowledge areas**, not chronological blog posts:
+
+| Area | What You'll Find |
+|------|-----------------|
+| [**Fundamentals**](/categories/fundamentals/) | Core concepts, glossary, and learning roadmap for newcomers |
+| [**Robot Intelligence**](/categories/robot-intelligence/) | VLA models, diffusion policies, neurosymbolic AI, sim-to-real transfer |
+| [**Robot Hardware**](/categories/robot-hardware/) | Humanoid platforms, comparisons, open-source builds, company guides |
+| [**Tools & Frameworks**](/categories/tools-and-frameworks/) | Isaac Lab, LeRobot, MuJoCo — hands-on tutorials with code |
+| [**Industry**](/categories/industry/) | Funding tracker, market analysis, safety regulations |
+
+New to the field? Follow our [Learning Path: From Zero to Robot Engineer](/learning-path/).
 
 ## Why EAI²?
 
-The embodied AI space is exploding. The humanoid robot market is projected to grow from $2.9B in 2025 to $15.3B by 2030 (CAGR 39.2%). But finding in-depth, technical, and up-to-date English content in one place is surprisingly hard.
+The humanoid robot market is projected to grow from $2.9B in 2025 to $15.3B by 2030 (CAGR 39.2%). The embodied AI research community publishes hundreds of papers monthly. But finding **in-depth, well-organized, technical English content** in one place is hard.
 
-We bridge that gap — combining research paper analysis, product comparisons, and practical engineering knowledge into a single resource.
+We bridge that gap — combining research analysis, product comparisons, and engineering tutorials into a structured knowledge resource.
 
 ## Stay Updated
 
-Subscribe to our [RSS feed](/index.xml) to never miss a post.
+Subscribe to our [RSS feed](/index.xml) to get new articles as they publish.

@@ -3,7 +3,7 @@ title: "Neurosymbolic VLA: Why Smaller Models Are Beating Giant Neural Networks 
 date: 2026-04-09
 draft: false
 tags: ["neurosymbolic", "VLA", "PDDL", "NS-VLA", "efficiency", "research"]
-categories: ["Research"]
+categories: ["Robot Intelligence"]
 summary: "A deep dive into the neurosymbolic VLA paradigm — where symbolic planning meets neural control, achieving 95% success rates with 2B parameters while 7B pure VLA models struggle at 34%."
 ShowToc: true
 TocOpen: true

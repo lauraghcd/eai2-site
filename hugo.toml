@@ -39,9 +39,25 @@ buildExpired = false
 
   [params.homeInfoParams]
     Title = "Embodied AI Intelligence"
-    Content = """Your comprehensive guide to **Embodied AI**, humanoid robots, VLA foundation models, and the future of physical intelligence.
+    Content = """Your guide to **embodied AI**, humanoid robots, and the future of physical intelligence.
 
-We cover **research breakthroughs**, **engineering tutorials**, **product comparisons**, and **industry analysis** — updated weekly."""
+### [Start Here →](/learning-path/) New to embodied AI? Follow our structured learning path.
+
+---
+
+**Explore by topic:**
+
+[**Fundamentals**](/categories/fundamentals/) — Core concepts, glossary, learning roadmap
+
+[**Robot Intelligence**](/categories/robot-intelligence/) — VLA models, diffusion policies, neurosymbolic AI, sim-to-real
+
+[**Robot Hardware**](/categories/robot-hardware/) — Humanoid platforms, comparisons, open-source builds
+
+[**Tools & Frameworks**](/categories/tools-and-frameworks/) — Isaac Lab, LeRobot, MuJoCo, edge deployment
+
+[**Industry**](/categories/industry/) — Funding, companies, regulations, market analysis
+
+---"""
 
   [[params.socialIcons]]
     name = "github"
@@ -90,28 +106,40 @@ We cover **research breakthroughs**, **engineering tutorials**, **product compar
   series = "series"
 
 [[menu.main]]
-  identifier = "search"
-  name = "Search"
-  url = "/search/"
-  weight = 5
+  identifier = "nav-start"
+  name = "Start Here"
+  url = "/learning-path/"
+  weight = 1
 
 [[menu.main]]
-  identifier = "categories"
-  name = "Categories"
-  url = "/categories/"
+  identifier = "nav-intelligence"
+  name = "Intelligence"
+  url = "/categories/robot-intelligence/"
   weight = 10
 
 [[menu.main]]
-  identifier = "tags"
-  name = "Tags"
-  url = "/tags/"
+  identifier = "nav-hardware"
+  name = "Hardware"
+  url = "/categories/robot-hardware/"
   weight = 20
 
 [[menu.main]]
-  identifier = "about"
-  name = "About"
-  url = "/about/"
+  identifier = "nav-tools"
+  name = "Tools"
+  url = "/categories/tools-and-frameworks/"
   weight = 30
+
+[[menu.main]]
+  identifier = "nav-industry"
+  name = "Industry"
+  url = "/categories/industry/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "nav-search"
+  name = "Search"
+  url = "/search/"
+  weight = 50
 
 [sitemap]
   changefreq = "weekly"

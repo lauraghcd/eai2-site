@@ -3,7 +3,7 @@ title: "Embodied AI Glossary: 50 Terms You Need to Know"
 date: 2026-04-06
 draft: false
 tags: ["glossary", "beginner", "reference", "terminology"]
-categories: ["Reference"]
+categories: ["Fundamentals"]
 summary: "A plain-English glossary of the most important terms in embodied AI, robotics, and robot learning — from VLA to sim-to-real to PDDL."
 ShowToc: true
 TocOpen: true

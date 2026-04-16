@@ -3,7 +3,9 @@ title: "Edge AI for Robots: Running VLA Models on Jetson, NPUs, and Mobile Hardw
 date: 2026-04-03
 draft: false
 tags: ["edge AI", "NVIDIA Jetson", "NPU", "deployment", "optimization", "quantization"]
-categories: ["Tutorials"]
+categories: ["Tools & Frameworks"]
+series: ["From Zero to Robot Engineer"]
+weight: 5
 summary: "How to deploy VLA and robot learning models on edge hardware — from NVIDIA Jetson to mobile NPUs — with practical optimization techniques for real-time robot control."
 ShowToc: true
 TocOpen: true

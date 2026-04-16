@@ -3,7 +3,7 @@ title: "The Humanoid Robot Landscape in 2026: Who's Shipping and Who's Still Dem
 date: 2026-04-15
 draft: false
 tags: ["humanoid robot", "Tesla Optimus", "Unitree", "AgiBot", "Figure AI", "industry"]
-categories: ["Industry"]
+categories: ["Robot Hardware"]
 summary: "A no-hype overview of the humanoid robot industry in 2026 — separating companies that are actually shipping units from those still producing demo videos."
 ShowToc: true
 TocOpen: true

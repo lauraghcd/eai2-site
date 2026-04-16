@@ -3,7 +3,7 @@ title: "VLA Models Compared: GR00T N1 vs pi0 vs OpenVLA in 2026"
 date: 2026-04-16
 draft: false
 tags: ["VLA", "foundation models", "GR00T", "pi0", "OpenVLA", "comparison"]
-categories: ["Research"]
+categories: ["Robot Intelligence"]
 summary: "A detailed comparison of the three leading Vision-Language-Action foundation models for robotics in 2026 — NVIDIA GR00T N1, Physical Intelligence pi0, and the open-source OpenVLA."
 ShowToc: true
 TocOpen: true

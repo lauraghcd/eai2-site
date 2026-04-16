@@ -3,7 +3,7 @@ title: "Unitree G1 vs Figure 02 vs Tesla Optimus: Which Humanoid Robot to Watch 
 date: 2026-04-12
 draft: false
 tags: ["Unitree G1", "Figure 02", "Tesla Optimus", "comparison", "humanoid robot"]
-categories: ["Comparisons"]
+categories: ["Robot Hardware"]
 summary: "A head-to-head comparison of three humanoid robots targeting different market segments — Unitree G1 for research, Figure 02 for logistics, and Tesla Optimus for manufacturing."
 ShowToc: true
 TocOpen: true

@@ -3,7 +3,7 @@ title: "7 Open-Source Humanoid Robot Projects You Can Build or Contribute To"
 date: 2026-04-02
 draft: false
 tags: ["open source", "DIY", "humanoid robot", "community", "projects"]
-categories: ["Reference"]
+categories: ["Robot Hardware"]
 summary: "A curated list of open-source humanoid robot projects in 2026 — from full builds you can assemble to software stacks you can contribute to."
 ShowToc: true
 TocOpen: true

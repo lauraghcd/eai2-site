@@ -3,7 +3,9 @@ title: "Sim-to-Real Transfer in 2026: Why Your Robot Policy Breaks in the Real W
 date: 2026-04-13
 draft: false
 tags: ["sim-to-real", "simulation", "domain randomization", "Isaac Sim", "tutorial"]
-categories: ["Tutorials"]
+categories: ["Robot Intelligence"]
+series: ["From Zero to Robot Engineer"]
+weight: 3
 summary: "A practical guide to bridging the sim-to-real gap — why policies trained in simulation fail on real robots, and the proven techniques to fix it."
 ShowToc: true
 TocOpen: true

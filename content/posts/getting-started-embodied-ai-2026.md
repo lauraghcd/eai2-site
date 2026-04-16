@@ -3,7 +3,9 @@ title: "Getting Started with Embodied AI in 2026: A Practical Guide for Engineer
 date: 2026-04-14
 draft: false
 tags: ["tutorial", "beginner", "embodied AI", "VLA", "simulation", "Isaac Sim"]
-categories: ["Tutorials"]
+categories: ["Fundamentals"]
+series: ["From Zero to Robot Engineer"]
+weight: 1
 summary: "A hands-on guide for software engineers who want to break into embodied AI — covering the key concepts, tools, frameworks, and a concrete learning path."
 ShowToc: true
 TocOpen: true

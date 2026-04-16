@@ -3,7 +3,7 @@ title: "Diffusion Policy Explained: How Image Generation Tech Powers Robot Contr
 date: 2026-04-04
 draft: false
 tags: ["diffusion policy", "robot learning", "imitation learning", "tutorial", "research"]
-categories: ["Research"]
+categories: ["Robot Intelligence"]
 summary: "How diffusion models — the same technology behind Stable Diffusion and DALL-E — are being used to generate robot actions, and why they outperform traditional approaches."
 ShowToc: true
 TocOpen: true
