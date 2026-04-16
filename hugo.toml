@@ -1,4 +1,4 @@
-baseURL = "https://eai2.cloud/"
+baseURL = "https://hub.eai2.cloud/"
 languageCode = "en"
 title = "EAI² — Embodied AI Intelligence"
 theme = "PaperMod"
