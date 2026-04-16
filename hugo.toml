@@ -2,7 +2,7 @@ baseURL = "https://hub.eai2.cloud/"
 languageCode = "en"
 title = "EAI² — Embodied AI Intelligence"
 theme = "PaperMod"
-paginate = 10
+paginate = 9
 
 enableRobotsTXT = true
 buildDrafts = false
@@ -17,8 +17,9 @@ buildExpired = false
   env = "production"
   title = "EAI²"
   description = "Your guide to embodied AI, humanoid robots, VLA models, and the future of physical intelligence"
-  keywords = ["embodied AI", "humanoid robot", "VLA", "robotics", "physical intelligence", "robot learning"]
+  keywords = ["embodied AI", "humanoid robot", "VLA", "robotics", "physical intelligence", "robot learning", "GR00T", "pi0", "OpenVLA", "humanoid robot comparison"]
   author = "EAI² Team"
+  DateFormat = "January 2, 2006"
   defaultTheme = "auto"
   disableThemeToggle = false
   ShowReadingTime = true
@@ -34,27 +35,51 @@ buildExpired = false
   hidemeta = false
   hideSummary = false
   showtoc = true
-  tocopen = false
+  tocopen = true
 
   [params.homeInfoParams]
-    Title = "Welcome to EAI²"
-    Content = "Your comprehensive guide to **Embodied AI**, humanoid robots, VLA foundation models, and the future of physical intelligence. We cover research breakthroughs, engineering tutorials, product comparisons, and industry analysis."
+    Title = "Embodied AI Intelligence"
+    Content = """Your comprehensive guide to **Embodied AI**, humanoid robots, VLA foundation models, and the future of physical intelligence.
+
+We cover **research breakthroughs**, **engineering tutorials**, **product comparisons**, and **industry analysis** — updated weekly."""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/lauraghcd/eai2-site"
 
   [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
+
+  [params.cover]
+    hiddenInList = false
+    hiddenInSingle = false
+    linkFullImages = true
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
 
 [params.analytics]
   [params.analytics.google]
     SiteVerificationTag = ""
 
 [params.assets]
-  favicon = "/favicon.ico"
   disableHLJS = true
 
 [markup]
   [markup.highlight]
     noClasses = false
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "dracula"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -63,6 +88,12 @@ buildExpired = false
   category = "categories"
   tag = "tags"
   series = "series"
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 5
 
 [[menu.main]]
   identifier = "categories"
