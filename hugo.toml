@@ -38,26 +38,8 @@ buildExpired = false
   tocopen = true
 
   [params.homeInfoParams]
-    Title = "Embodied AI Intelligence"
-    Content = """Your guide to **embodied AI**, humanoid robots, and the future of physical intelligence.
-
-### [Start Here →](/learning-path/) New to embodied AI? Follow our structured learning path.
-
----
-
-**Explore by topic:**
-
-[**Fundamentals**](/categories/fundamentals/) — Core concepts, glossary, learning roadmap
-
-[**Robot Intelligence**](/categories/robot-intelligence/) — VLA models, diffusion policies, neurosymbolic AI, sim-to-real
-
-[**Robot Hardware**](/categories/robot-hardware/) — Humanoid platforms, comparisons, open-source builds
-
-[**Tools & Frameworks**](/categories/tools-and-frameworks/) — Isaac Lab, LeRobot, MuJoCo, edge deployment
-
-[**Industry**](/categories/industry/) — Funding, companies, regulations, market analysis
-
----"""
+    Title = " "
+    Content = " "
 
   [[params.socialIcons]]
     name = "github"
