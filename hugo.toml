@@ -72,6 +72,10 @@ buildExpired = false
     hiddenInSingle = false
     linkFullImages = true
 
+  [params.footer]
+    hideCopyright = false
+    text = "[About](/about/) · [Contact](/contact/) · [Privacy](/privacy/)"
+
   [params.fuseOpts]
     isCaseSensitive = false
     shouldSort = true
@@ -140,6 +144,12 @@ buildExpired = false
   name = "Search"
   url = "/search/"
   weight = 50
+
+[[menu.main]]
+  identifier = "nav-about"
+  name = "About"
+  url = "/about/"
+  weight = 60
 
 [sitemap]
   changefreq = "weekly"
