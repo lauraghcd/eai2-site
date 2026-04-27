@@ -11,6 +11,16 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **Five frameworks cover the full stack** — Isaac Lab (scaled training), LeRobot (real-world data), MuJoCo (prototyping), ROS 2 (deployment), Gymnasium Robotics (benchmarks)
+- **They're complementary, not competitive** — Pick by stage: prototyping → scaled training → real-world data → hardware deployment
+- **Isaac Lab unlocks 4096+ parallel environments** — On a single GPU, with built-in domain randomization and direct GR00T integration
+- **LeRobot is the "Hugging Face for robots"** — Standardized data format, pre-trained policies on the Hub, works with UR5/Franka/Koch hardware
+
+</div>
+
 The robot learning ecosystem has matured significantly. Instead of building everything from scratch, you can now compose a stack from specialized frameworks. Here are the five you need to know.
 
 ## 1. NVIDIA Isaac Lab
@@ -54,6 +64,8 @@ pip install lerobot
 from lerobot import available_policies
 policy = available_policies["act_aloha_sim_transfer_cube"]
 ```
+
+For a step-by-step walkthrough, see our [LeRobot tutorial](/posts/lerobot-tutorial-getting-started/).
 
 **When to skip it:** If you're doing pure simulation-based research without real robot data.
 
@@ -136,6 +148,8 @@ Real-World Data:
 Deployment:
   ROS 2 → connect trained policy to real robot hardware
 ```
+
+The bridge between scaled training and deployment is a real challenge — see our [sim-to-real transfer guide](/posts/sim-to-real-transfer-guide/) for techniques that close the gap, and our [edge AI deployment guide](/posts/edge-ai-robot-deployment/) for getting these models running on Jetson and NPU hardware.
 
 You don't need all five for every project. Pick the ones that match your stage:
 

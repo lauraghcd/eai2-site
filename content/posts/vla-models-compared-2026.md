@@ -9,9 +9,19 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **GR00T N1.6 leads on speed** — 3B params, 27.3 Hz inference, 76.8% real-world success, Apache 2.0 license, optimized for NVIDIA hardware
+- **pi0.6 leads on manipulation** — RECAP self-improvement loop, 2x throughput over pi0.5, ~80% manipulation success, $11B valuation
+- **OpenVLA leads on openness** — Fully open weights/code/data on the OXE dataset, but zero-shot generalization lags closed-source by 20-30 points
+- **Neurosymbolic alternatives are gaining** — A 2B NS-VLA hits 95% vs 34% for pure 7B VLAs, suggesting architecture beats scale for structured tasks
+
+</div>
+
 The race to build the "foundation model for robots" has produced three standout contenders by mid-2026. Each takes a fundamentally different approach to the same problem: how do you give a robot the ability to see, understand, and act in the physical world?
 
-This guide breaks down **NVIDIA GR00T N1**, **Physical Intelligence pi0**, and **OpenVLA** across architecture, performance, licensing, and practical deployment considerations.
+This guide breaks down **NVIDIA GR00T N1**, **Physical Intelligence pi0**, and **OpenVLA** across architecture, performance, licensing, and practical deployment considerations. New to the field? Start with our [getting started with embodied AI](/posts/getting-started-embodied-ai-2026/) guide first.
 
 ## What Are VLA Models?
 
@@ -43,7 +53,7 @@ The key insight: instead of hand-coding robot behaviors, you train a single neur
 
 ### Physical Intelligence pi0.6
 
-**Architecture:** RECAP three-stage self-improvement pipeline, 2x throughput over pi0.5.
+**Architecture:** RECAP three-stage self-improvement pipeline with [diffusion policy](/posts/diffusion-policy-explained/) action heads, 2x throughput over pi0.5.
 
 **Key specs:**
 - Valuation: $11B (largest in embodied AI)
@@ -101,7 +111,7 @@ The key insight: instead of hand-coding robot behaviors, you train a single neur
 
 ## The Neurosymbolic Alternative
 
-It's worth noting the emerging **neurosymbolic VLA** approach. Recent work from Tufts (ICRA 2026) showed that combining PDDL symbolic planning with diffusion policies achieved 95% success rates versus 34% for pure VLA models, with 100x better energy efficiency. The NS-VLA architecture (2B parameters) outperforms 7B pure VLA baselines on LIBERO and CALVIN benchmarks.
+It's worth noting the emerging **neurosymbolic VLA** approach. Recent work from Tufts (ICRA 2026) showed that combining PDDL symbolic planning with diffusion policies achieved 95% success rates versus 34% for pure VLA models, with 100x better energy efficiency. The NS-VLA architecture (2B parameters) outperforms 7B pure VLA baselines on LIBERO and CALVIN benchmarks. We cover this paradigm shift in depth in our [neurosymbolic VLA explainer](/posts/neurosymbolic-vla-explained/).
 
 This suggests the future may not be "bigger VLA models" but "smarter combinations of symbolic reasoning and neural control."
 

@@ -11,6 +11,16 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **One framework, full pipeline** — LeRobot standardizes data collection, training, and deployment, with pre-trained policies on the Hugging Face Hub
+- **ACT is the recommended starting policy** — Action Chunking with Transformers, well-supported in LeRobot, works on the ALOHA simulation benchmark out of the box
+- **`pip install lerobot` is the only setup step** — Then 7 steps from a pre-trained download to a fine-tuned, evaluated, and shared policy
+- **50 teleoperated demos are typically enough** — For most manipulation tasks, especially when starting from a pre-trained checkpoint
+
+</div>
+
 LeRobot is Hugging Face's open-source framework for robot learning. It standardizes the entire pipeline from data collection to deployment. This tutorial walks you through the complete workflow.
 
 ## Prerequisites

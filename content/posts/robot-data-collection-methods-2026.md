@@ -9,6 +9,16 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **Quality crushes quantity** — 100 clean teleop demos typically beat 10,000 messy ones; bad data actively hurts since IL replicates whatever you show
+- **Five collection methods, different roles** — Teleop (default), kinesthetic (cobots), third-person video (pre-train), simulation (scale), self-improvement (production fleets)
+- **Best 2026 stack combines all** — Pre-train on OXE+sim, fine-tune on 100-500 high-quality teleop demos, deploy with self-improvement for ongoing data collection
+- **Throughput target: 100-300 demos/day** — A skilled VR teleoperator on a typical manipulation task; budget 1-5 minutes per demo
+
+</div>
+
 Data is the bottleneck in robot learning. You can have the world's best VLA architecture, but without good demonstrations, your robot won't work. This guide covers every major data collection method used in 2026, with honest trade-offs for each.
 
 ## Why Data Quality Matters More Than Quantity

@@ -9,7 +9,17 @@ ShowToc: true
 TocOpen: true
 ---
 
-You've built a humanoid robot that works in the lab. Now you want to deploy it in a factory alongside human workers. What regulations apply? What certifications do you need? This guide covers the current state of robot safety standards in 2026.
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **ISO/TS 15066 is the baseline** — Force limits vary by body region (29N skull, 140N chest, 2N eyes); humanoids with 20-40+ contact points complicate compliance
+- **EU AI Act hits August 2026** — Classifies workplace autonomous robots as "high-risk AI," mandates human oversight, transparency, and decision logging
+- **Certification costs $50-200K and 3-6 months** — Budget for it; retrofitting safety after-the-fact is 10x more expensive than building it in
+- **Big regulatory gaps remain** — No standard for bipedal fall safety, software-update re-certification, or learning systems that change behavior over time
+
+</div>
+
+You've built a humanoid robot that works in the lab. Now you want to deploy it in a factory alongside human workers. What regulations apply? What certifications do you need? This guide covers the current state of robot safety standards in 2026 — the hardware side of the [humanoid robot landscape](/posts/humanoid-robot-landscape-2026/) most articles skip over.
 
 ## The Regulatory Landscape
 
@@ -60,7 +70,7 @@ For deploying a humanoid robot in a factory or warehouse:
 |--------|-------------|-----------|-------|
 | EU | Machinery Regulation 2023/1230 | CE marking | New AI Act adds requirements for "high-risk AI systems" |
 | US | OSHA + ANSI/RIA R15.06 | No federal robot law | States may add requirements |
-| China | GB/T 36530-2018 | SAMR | National standards being updated for humanoids |
+| China | GB/T 36530-2018 | SAMR | National standards being updated for humanoids — see our [China humanoid robot companies guide](/posts/china-humanoid-robot-companies/) for industrial context |
 | Japan | JIS B 8433 | METI | Most permissive for robot-human collaboration |
 
 ## The AI Act Complication (EU)

@@ -6,3 +6,106 @@
 <!-- Preconnect for fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+{{- /* ===== JSON-LD Schema Markup ===== */ -}}
+
+{{- /* Article schema for individual posts */ -}}
+{{- if eq .Kind "page" }}
+{{- $cat := index (.Params.categories | default (slice "Article")) 0 -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ (.Params.summary | default .Description | default "") | jsonify }},
+  "image": {{ (printf "%sfavicon.svg" site.BaseURL) | jsonify }},
+  "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "dateModified": {{ (.Lastmod | default .Date).Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "author": {
+    "@type": "Organization",
+    "name": "EAI² Editorial",
+    "url": {{ (printf "%sabout/author/" site.BaseURL) | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.Title | jsonify }},
+    "url": {{ site.BaseURL | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ (printf "%sfavicon.svg" site.BaseURL) | jsonify }}
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink | jsonify }}
+  },
+  "articleSection": {{ $cat | jsonify }},
+  "keywords": {{ (delimit (.Params.tags | default slice) ", ") | jsonify }},
+  "wordCount": {{ .WordCount }},
+  "inLanguage": "en-US"
+}
+</script>
+{{- end }}
+
+{{- /* BreadcrumbList for article and category pages */ -}}
+{{- if or (eq .Kind "page") (eq .Kind "term") (eq .Kind "section") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ site.BaseURL | jsonify }}
+    }{{- if eq .Kind "page" }},
+    {{- $cat := index (.Params.categories | default (slice "Articles")) 0 -}}
+    {{- $catSlug := lower (replaceRE "[ &]+" "-" $cat) }}
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ $cat | jsonify }},
+      "item": {{ (printf "%scategories/%s/" site.BaseURL $catSlug) | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ .Title | jsonify }},
+      "item": {{ .Permalink | jsonify }}
+    }
+    {{- else if or (eq .Kind "term") (eq .Kind "section") }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ .Title | jsonify }},
+      "item": {{ .Permalink | jsonify }}
+    }
+    {{- end }}
+  ]
+}
+</script>
+{{- end }}
+
+{{- /* WebSite schema for homepage */ -}}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.Title | jsonify }},
+  "alternateName": "EAI²",
+  "url": {{ site.BaseURL | jsonify }},
+  "description": {{ site.Params.description | jsonify }},
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.Title | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ (printf "%sfavicon.svg" site.BaseURL) | jsonify }}
+    }
+  },
+  "inLanguage": "en-US"
+}
+</script>
+{{- end }}

@@ -9,6 +9,16 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **PPO is still the workhorse** — A 2017 algorithm remains the default in 2026 because it's stable, well-supported, and pairs perfectly with Isaac Lab's parallel environments
+- **GRPO is the breakout newcomer** — Adapted from LLM training, now powering RL fine-tuning of VLA models like NS-VLA
+- **Reward design dominates algorithm choice** — Bad rewards produce bad policies regardless of method; dense beats sparse, watch for reward hacking
+- **RL + IL is the convergence** — Pre-train with imitation learning, fine-tune with RL/GRPO; the combination beats either alone
+
+</div>
+
 Reinforcement learning was supposed to solve robotics. Train an agent in simulation with a reward function, deploy on a real robot, done. The reality has been messier — but in 2026, RL has become one of several reliable tools in the robot learning toolkit. Here's what actually works.
 
 ## Where RL Wins in Robotics

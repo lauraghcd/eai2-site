@@ -9,6 +9,16 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **ROS 2 is middleware, not a brain** — VLA models give you a policy; ROS 2 gives you the connective tissue between sensors, the policy, motor controllers, and safety monitors
+- **ROS 1 is end-of-life since May 2025** — Migrate to ROS 2; use Humble for production, Jazzy for new projects (both LTS)
+- **A typical humanoid runs 30-50 nodes** — Lifecycle nodes, behavior trees, and watchdog patterns are how you keep it stable
+- **VLA integration pattern** — Decouple inference into its own node, use RELIABLE + KEEP_LAST 1 QoS, monitor inference latency against sensor rate
+
+</div>
+
 In 2026, with VLA foundation models seemingly able to drive entire robots end-to-end, you might wonder: do we still need ROS 2? The answer is yes — emphatically. Here's why ROS 2 remains essential, what's changed, and how to use it without falling into its complexity traps.
 
 ## What ROS 2 Actually Is

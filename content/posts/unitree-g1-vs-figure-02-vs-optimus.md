@@ -9,7 +9,17 @@ ShowToc: true
 TocOpen: true
 ---
 
-Three humanoid robots, three very different strategies, three price points spanning two orders of magnitude. Here's how they stack up.
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **Two orders of magnitude in price** — Unitree G1 at $16K (research), Tesla Optimus ~$50K+ (factory), Figure 02 ~$100K+ (logistics)
+- **Three different bets** — Unitree on openness/ecosystem, Figure on logistics specialization, Tesla on manufacturing scale economics
+- **Only Unitree has an open SDK** — Figure and Tesla are closed ecosystems; you work with their teams or not at all
+- **Battery life varies wildly** — Tesla Optimus ~8 hours (battery DNA), Figure 02 ~5 hours, Unitree G1 ~2 hours
+
+</div>
+
+Three humanoid robots, three very different strategies, three price points spanning two orders of magnitude. Here's how they stack up. For the wider field these three sit within, see our [humanoid robot landscape 2026](/posts/humanoid-robot-landscape-2026/).
 
 ## Quick Comparison
 
@@ -28,13 +38,13 @@ Three humanoid robots, three very different strategies, three price points spann
 
 ### What It Is
 
-The G1 is Unitree's entry-level humanoid — deliberately affordable, deliberately open. At $16,000, it's the cheapest full humanoid robot you can buy, and it comes with a complete SDK for custom development.
+The G1 is Unitree's entry-level humanoid — deliberately affordable, deliberately open. At $16,000, it's the cheapest full humanoid robot you can buy, and it comes with a complete SDK for custom development. (See our broader survey of [China's humanoid robot companies](/posts/china-humanoid-robot-companies/) for context on Unitree's position in the domestic ecosystem.)
 
 ### Strengths
 
 **Price-to-capability ratio:** Nothing else comes close. For the cost of a decent used car, you get a bipedal humanoid with dexterous hands, depth cameras, and a full ROS 2 stack.
 
-**Open development:** Full API access, ROS 2 integration, and an active community. University labs worldwide use it as their standard research platform.
+**Open development:** Full API access, ROS 2 integration, and an active community. University labs worldwide use it as their standard research platform — and it appears prominently on lists of [open-source humanoid projects](/posts/open-source-humanoid-projects/) thanks to its SDK and MuJoCo Menagerie support.
 
 **Iteration speed:** Small, light, and relatively cheap to repair. When it falls over (and it will), the cost of replacement parts is manageable.
 

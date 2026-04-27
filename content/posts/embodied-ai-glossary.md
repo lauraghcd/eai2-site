@@ -9,7 +9,17 @@ ShowToc: true
 TocOpen: true
 ---
 
-New to embodied AI? This glossary covers the 50 most important terms you'll encounter, explained without jargon.
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **50 essential terms** — Covers everything from action spaces and bipedal locomotion to VLA models and zero-shot transfer
+- **Plain-English definitions** — Each entry written for engineers entering the field, not researchers writing papers
+- **Reference, not tutorial** — Skim to fill gaps, or read end-to-end as a 10-minute primer
+- **Cross-linked to deeper guides** — Key terms connect to full articles on VLA, sim-to-real, and getting started
+
+</div>
+
+New to embodied AI? This glossary covers the 50 most important terms you'll encounter, explained without jargon. If you want a structured learning path instead of a reference, start with our [getting started guide](/posts/getting-started-embodied-ai-2026/).
 
 ## A
 
@@ -115,7 +125,7 @@ New to embodied AI? This glossary covers the 50 most important terms you'll enco
 
 ## S
 
-**Sim-to-Real Transfer** — Deploying a policy trained in simulation on a real robot. The gap between simulation and reality is the central challenge.
+**Sim-to-Real Transfer** — Deploying a policy trained in simulation on a real robot. The gap between simulation and reality is the central challenge — see our [sim-to-real transfer guide](/posts/sim-to-real-transfer-guide/) for techniques to close it.
 
 **State Estimation** — Figuring out the current state of the robot and its environment from sensor data. Includes localization, object pose estimation, and contact state detection.
 
@@ -127,7 +137,7 @@ New to embodied AI? This glossary covers the 50 most important terms you'll enco
 
 ## V
 
-**VLA (Vision-Language-Action)** — A type of foundation model that takes visual input and language instructions and outputs robot actions. The "foundation model for robots."
+**VLA (Vision-Language-Action)** — A type of foundation model that takes visual input and language instructions and outputs robot actions. The "foundation model for robots." See our [VLA models compared](/posts/vla-models-compared-2026/) for a head-to-head of the leading models.
 
 ## W
 

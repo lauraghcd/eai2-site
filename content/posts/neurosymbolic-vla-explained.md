@@ -9,7 +9,17 @@ ShowToc: true
 TocOpen: true
 ---
 
-A 2B parameter model beating a 7B model by nearly 3x. Not through better scaling or more data, but through a fundamentally different architecture. The neurosymbolic VLA paradigm is challenging the assumption that bigger neural networks are always better for robot control.
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **2B beats 7B by 3x** — NS-VLA at 2B parameters outperforms 7B pure VLA baselines on LIBERO and CALVIN, hitting 91.2% CALVIN zero-shot
+- **Tufts NSM at ICRA 2026** — 95% success rate vs 34% for pure VLA, plus 100x energy efficiency by running planning on CPU at 19.4W
+- **Symbolic + neural split** — PDDL planner handles task decomposition; diffusion policies handle each motor primitive
+- **"Cheap structure beats expensive fitting"** — Adding architecture (PDDL) outperforms scaling parameters when tasks have inherent symbolic structure
+
+</div>
+
+A 2B parameter model beating a 7B model by nearly 3x. Not through better scaling or more data, but through a fundamentally different architecture. The neurosymbolic VLA paradigm is challenging the assumption that bigger neural networks are always better for robot control. (For context on the pure-VLA models being challenged, see our [VLA models compared](/posts/vla-models-compared-2026/).)
 
 ## The Problem with Pure VLA
 
@@ -102,7 +112,7 @@ Write PDDL domain and problem files for your task:
 Train separate neural modules for:
 - **Object detection** — What objects are in the scene and where?
 - **State estimation** — What PDDL predicates are currently true?
-- **Motor primitives** — For each symbolic action (pick, place, push), train a diffusion policy
+- **Motor primitives** — For each symbolic action (pick, place, push), train a [diffusion policy](/posts/diffusion-policy-explained/)
 
 ### Step 3: Connect via a Symbolic Planner
 

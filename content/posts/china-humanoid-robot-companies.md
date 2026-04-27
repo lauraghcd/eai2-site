@@ -9,11 +9,21 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **AgiBot leads in shipments** — 5,000+ units delivered from its Shanghai gigafactory by Q1 2026, RaaS at ¥15,000/month with 12-18 month payback
+- **Unitree owns the ecosystem** — 10,000+ cumulative robots shipped (G1 at $16K, H1 at $90K), the de facto research platform globally
+- **Capital is flooding in** — 200+ equity rounds in 2026 totaling 30B+ yuan ($4.1B), averaging ¥330M/day
+- **Strategy diverges from US** — Government-backed, manufacturing-first, aggressive pricing for market share rather than general-purpose moonshots
+
+</div>
+
 China's humanoid robot sector logged over 200 equity financing events since the start of 2026, pulling in more than 30 billion yuan ($4.1B) in total — averaging roughly 330 million yuan ($45M) per day. This guide maps the key players and their strategies.
 
 ## The Big Picture
 
-China's approach to humanoid robots differs fundamentally from the US:
+China's approach to humanoid robots differs fundamentally from the [US-led humanoid landscape](/posts/humanoid-robot-landscape-2026/):
 - **Government-backed:** National and provincial subsidies, dedicated industrial zones
 - **Manufacturing-first:** Focus on factory deployment before general-purpose applications
 - **Speed over perfection:** Ship early, iterate fast, let data accumulate
@@ -27,7 +37,7 @@ China's approach to humanoid robots differs fundamentally from the US:
 
 The clear leader in production volume. AgiBot shipped over 5,000 units from its Shanghai gigafactory by Q1 2026, primarily to automotive and electronics manufacturers.
 
-**Business model:** Robot-as-a-Service at ~¥15,000/month ($2,000/month). This makes the economics work for factories — payback within 12-18 months compared to human labor costs.
+**Business model:** Robot-as-a-Service at ~¥15,000/month ($2,000/month). This makes the economics work for factories — payback within 12-18 months compared to human labor costs. (See our [embodied AI funding tracker](/posts/embodied-ai-funding-tracker-2026/) for the latest investment context.)
 
 **Technology:** In-house actuators, proprietary VLA model trained on factory manipulation data, edge inference on custom hardware.
 
@@ -40,7 +50,7 @@ The clear leader in production volume. AgiBot shipped over 5,000 units from its 
 Unitree took the "Android of robots" approach — make it cheap, make it open, let the ecosystem build applications.
 
 **Product line:**
-- G1 ($16,000) — Entry-level humanoid for research
+- G1 ($16,000) — Entry-level humanoid for research (see our [Unitree G1 vs Figure 02 vs Optimus comparison](/posts/unitree-g1-vs-figure-02-vs-optimus/))
 - H1 ($90,000) — Performance humanoid for advanced research and light commercial use
 - Go2/B2 — Quadruped robots (their original product line, still major revenue)
 

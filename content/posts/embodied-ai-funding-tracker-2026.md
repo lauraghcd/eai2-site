@@ -9,6 +9,16 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **$8.5B+ raised YTD across 200+ deals** — Average round size $40M, with China driving 60% of deal volume
+- **Physical Intelligence's $2.4B Series C** — The single largest round, backed by Bezos, NVIDIA, and Thrive
+- **Corporate strategics dominate** — NVIDIA, Google, Amazon, Samsung, BMW, Mercedes are writing the biggest checks, not traditional VCs
+- **Valuations are inflating** — Median pre-revenue humanoid valuation jumped from $200M (2025) to $500M+ (2026), watch deployment numbers not fundraises
+
+</div>
+
 2026 is shaping up to be the biggest year ever for embodied AI funding. This page tracks every significant deal. Bookmark it — we update monthly.
 
 ## 2026 Funding Summary

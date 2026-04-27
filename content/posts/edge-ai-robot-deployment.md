@@ -11,6 +11,16 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **Memory bandwidth, not compute, is the real bottleneck** — Jetson Orin has 35-60 TOPS but only 68-204 GB/s memory; VLA inference is memory-bound
+- **Quantization is the biggest lever** — INT8 buys 2-4x speedup with minimal accuracy loss for perception and policy networks
+- **Distillation halves model size** — A 1-2B student keeps 80-90% of a 7B teacher's performance at 3-5x faster inference
+- **Budget only 50-60% of compute for the model** — SLAM, planning, and comms also need cycles, and thermal throttling hits sustained workloads
+
+</div>
+
 Your VLA model runs beautifully on an A100. Now you need it running at 30Hz on a robot with a 15W power budget. Welcome to edge AI deployment for robotics.
 
 ## The Edge Hardware Landscape in 2026

@@ -11,9 +11,19 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **Three gaps cause failure** — Visual (rendering ≠ reality), Physics (contact, friction, deformables), Dynamics (motor backlash, latency, sensor noise)
+- **Domain randomization is the brute-force fix** — Start with ±20% on physical parameters; the optimal randomized policy is slightly worse in sim by design
+- **Real-to-sim-to-real is 2026 SOTA** — Scan environment → reconstruct in Isaac Sim → train with randomization → fine-tune on real data; achieves 70-85% vs 30-50% for naive sim-to-real
+- **The first 10 real demos are gold** — Even tiny amounts of real data dramatically improve transfer; never skip this step
+
+</div>
+
 You trained a robot arm to pick up objects in simulation. Success rate: 95%. You deploy it on a real robot. Success rate: 30%. Welcome to the sim-to-real gap.
 
-This gap is the central challenge of robot learning, and in 2026 we have better tools and techniques to close it than ever before. This guide covers what causes the gap and how to fix it.
+This gap is the central challenge of robot learning, and in 2026 we have better tools and techniques to close it than ever before. This guide covers what causes the gap and how to fix it. For the broader toolchain context, see our overview of [robot learning frameworks](/posts/robot-learning-frameworks-2026/).
 
 ## Why Sim-to-Real Fails
 
@@ -120,7 +130,7 @@ This pipeline typically achieves 70-85% real-world success rates, compared to 30
 
 4. **Curriculum learning helps.** Start with easy variants (centered objects, good lighting) and gradually increase difficulty. This works in both sim and real.
 
-5. **The first 10 real-world demonstrations are gold.** Even a small amount of real data for fine-tuning dramatically improves transfer. Tools like LeRobot make data collection straightforward.
+5. **The first 10 real-world demonstrations are gold.** Even a small amount of real data for fine-tuning dramatically improves transfer. Tools like LeRobot make data collection straightforward — see our [LeRobot tutorial](/posts/lerobot-tutorial-getting-started/) to get started in an afternoon.
 
 ## Tools for 2026
 
@@ -139,4 +149,4 @@ The sim-to-real gap is shrinking but not disappearing. Key research frontiers in
 - **Foundation model pre-training** — VLA models pre-trained on diverse sim data transfer better
 - **Adaptive policies** — Policies that detect and compensate for sim-real mismatch at runtime
 
-The goal isn't zero gap — it's a gap small enough that a few real-world demonstrations can close it.
+The goal isn't zero gap — it's a gap small enough that a few real-world demonstrations can close it. Once the policy is closing that gap on real hardware, the next challenge is squeezing it onto the robot's onboard compute — see our [edge AI deployment guide](/posts/edge-ai-robot-deployment/) for that side of the problem.

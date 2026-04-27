@@ -9,6 +9,16 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **Same math as Stable Diffusion** — Denoise random actions into a coherent robot trajectory, conditioned on visual input rather than text
+- **Multi-modality is the killer feature** — Naturally represents many valid trajectories instead of averaging them into a useless middle path
+- **Action chunking, not single steps** — Predicts 16-64 future actions at once with a receding horizon, producing smooth temporally consistent control
+- **Speed is the trade-off** — DDIM sampling, distillation, and TensorRT push real-world rates to 50Hz+ on modern GPUs
+
+</div>
+
 The same mathematical framework that generates photorealistic images from text prompts is now generating robot arm trajectories from visual observations. This isn't a metaphor — Diffusion Policy literally applies the denoising diffusion process to robot action generation.
 
 ## The Core Idea

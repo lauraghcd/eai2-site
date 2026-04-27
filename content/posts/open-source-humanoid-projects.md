@@ -9,6 +9,16 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **Cheapest full humanoid is $1.5-3K** — InMoov, 3D-printable, but teleoperated rather than AI-driven
+- **K-Scale Stompy ($10-15K)** — Open-source bipedal designed for VLA and RL research, with full MuJoCo simulation model
+- **Koch v1.1 at ~$500** — The standard open-source arm for LeRobot data collection, buildable in a weekend
+- **Software stack is converging** — LeRobot + OpenVLA + MuJoCo Menagerie + Isaac Lab now covers the full pipeline from data collection to scaled training
+
+</div>
+
 You don't need a $100K budget to work with humanoid robots. The open-source community has produced remarkable projects ranging from affordable full builds to sophisticated software frameworks. Here are seven worth your time.
 
 ## Hardware Projects

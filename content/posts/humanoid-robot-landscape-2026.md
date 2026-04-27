@@ -9,9 +9,19 @@ ShowToc: true
 TocOpen: true
 ---
 
+<div class="tldr">
+<div class="tldr-label">TL;DR · Key Takeaways</div>
+
+- **$2.16B market in 2026, $15.26B by 2030** — 39.2% CAGR, but real revenue concentrates in a handful of shipping players
+- **Three tiers exist** — Shipping (Tesla, AgiBot, Unitree), Scaling (Figure, 1X, Fourier), and Demo (Boston Dynamics, Sanctuary)
+- **AgiBot leads on volume** — 5,000+ units shipped at ¥15K/month RaaS; Unitree leads on installed base with 10,000+ across all models
+- **The 95% → 99.9% reliability gap** — Bridging lab demos to factory deployment is orders of magnitude harder than the initial work
+
+</div>
+
 The humanoid robot market hit $2.16 billion in 2026 and is on track to reach $15.26 billion by 2030 at a CAGR of 39.2%. But behind these impressive numbers lies a stark divide: companies that are **actually manufacturing and delivering robots** versus those still in the **perpetual demo stage**.
 
-This article cuts through the marketing noise to give you the real state of humanoid robotics in April 2026.
+This article cuts through the marketing noise to give you the real state of humanoid robotics in April 2026. For a head-to-head of the three most-watched models, see our [Unitree G1 vs Figure 02 vs Optimus comparison](/posts/unitree-g1-vs-figure-02-vs-optimus/).
 
 ## The Shipping Tier
 
@@ -25,7 +35,7 @@ Tesla converted part of its Fremont factory to Optimus manufacturing in early 20
 
 ### AgiBot (Shanghai)
 
-The clear front-runner in China's humanoid robot race. AgiBot shipped over 5,000 units from its Shanghai facility by Q1 2026, primarily to automotive and electronics manufacturers.
+The clear front-runner in [China's humanoid robot race](/posts/china-humanoid-robot-companies/). AgiBot shipped over 5,000 units from its Shanghai facility by Q1 2026, primarily to automotive and electronics manufacturers.
 
 **Key development:** Standardized "robot-as-a-service" pricing model at approximately ¥15,000/month per unit, making economic payback achievable within 12-18 months for factory deployments.
 
@@ -81,7 +91,7 @@ The companies shipping the most units (AgiBot, Unitree, Tesla) are accumulating 
 
 ## Investment Implications
 
-The humanoid robot supply chain is where the real near-term opportunity lies:
+The humanoid robot supply chain is where the real near-term opportunity lies (track every major round in our [embodied AI funding tracker](/posts/embodied-ai-funding-tracker-2026/)):
 - **Actuators and motors** — Every humanoid needs 20-40 high-performance actuators
 - **Sensors** — LiDAR, force/torque sensors, tactile sensing
 - **Edge compute** — NVIDIA Jetson, Qualcomm Robotics, custom ASICs
