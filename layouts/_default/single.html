@@ -1,0 +1,56 @@
+{{- define "main" }}
+
+{{- $cat := index (.Params.categories | default (slice "default")) 0 -}}
+{{- $catSlug := lower (replaceRE "[ &]+" "-" $cat) -}}
+
+<article class="post-single article-{{ $catSlug }}">
+  <header class="article-hero article-hero-{{ $catSlug }}">
+    <div class="article-hero-pattern"></div>
+    <div class="article-hero-content">
+      {{ partial "breadcrumbs.html" . }}
+      <a href="/categories/{{ $catSlug }}/" class="article-hero-cat">{{ $cat }}</a>
+      <h1 class="article-hero-title">{{ .Title }}</h1>
+      {{- with .Params.summary }}
+      <p class="article-hero-summary">{{ . }}</p>
+      {{- end }}
+      <div class="article-hero-meta">
+        <span>{{ .Date.Format "Jan 2, 2026" }}</span>
+        <span class="meta-dot">·</span>
+        <span>{{ .ReadingTime }} min read</span>
+        {{- with .WordCount }}
+        <span class="meta-dot">·</span>
+        <span>{{ . }} words</span>
+        {{- end }}
+      </div>
+    </div>
+  </header>
+
+  {{- if (.Param "ShowToc") }}
+  {{- partial "toc.html" . }}
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content md-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}}
+    {{- end }}
+  </footer>
+</article>
+
+{{- end }}

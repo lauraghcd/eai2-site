@@ -1,0 +1,128 @@
+{{- define "main" }}
+
+{{- if (and site.Params.profileMode.enabled .IsHome) }}
+{{- partial "index_profile.html" . }}
+{{- else }}
+
+{{- if not .IsHome | and .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>
+    {{ .Title }}
+    {{- if and (or (eq .Kind `term`) (eq .Kind `section`)) (.Param "ShowRssButtonInSectionTermList") }}
+    {{- with .OutputFormats.Get "rss" }}
+    <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+    {{- end }}
+    {{- end }}
+  </h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description | markdownify }}
+  </div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="md-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- $pages := union .RegularPages .Sections }}
+
+{{- if .IsHome }}
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+{{- end }}
+
+{{- $paginator := .Paginate $pages }}
+
+{{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
+{{- partial "home_info.html" . }}
+{{- end }}
+
+{{- $term := .Data.Term }}
+
+{{- /* Featured Article — only on home page first paginator page */ -}}
+{{- if and .IsHome (eq $paginator.PageNumber 1) }}
+  {{- $featured := index $paginator.Pages 0 }}
+  {{- with $featured }}
+    {{- $cat := index (.Params.categories | default (slice "default")) 0 -}}
+    {{- $catSlug := lower (replaceRE "[ &]+" "-" $cat) -}}
+    <a class="featured-article featured-{{ $catSlug }}" href="{{ .Permalink }}" aria-label="Featured: {{ .Title | plainify }}">
+      <div class="featured-visual">
+        <div class="featured-pattern"></div>
+        <div class="featured-badge">★ Featured</div>
+        <div class="featured-category">{{ $cat }}</div>
+      </div>
+      <div class="featured-content">
+        <h2 class="featured-title">{{ .Title }}</h2>
+        <p class="featured-summary">{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+        <div class="featured-meta">
+          <span>{{ .ReadingTime }} min read</span>
+          <span class="meta-dot">·</span>
+          <span>{{ .Date.Format "Jan 2, 2026" }}</span>
+          <span class="meta-arrow">Read article →</span>
+        </div>
+      </div>
+    </a>
+  {{- end }}
+{{- end }}
+
+{{- /* Post grid */ -}}
+{{- $posts := $paginator.Pages }}
+{{- if and .IsHome (eq $paginator.PageNumber 1) }}
+  {{- $posts = after 1 $paginator.Pages }}
+{{- end }}
+
+<div class="post-grid">
+{{- range $index, $page := $posts }}
+{{- $cat := index (.Params.categories | default (slice "default")) 0 -}}
+{{- $catSlug := lower (replaceRE "[ &]+" "-" $cat) -}}
+
+<a class="post-card cat-{{ $catSlug }}" href="{{ .Permalink }}" aria-label="post link to {{ .Title | plainify }}">
+  <div class="post-card-visual">
+    <div class="post-card-pattern"></div>
+    <div class="post-card-cat">{{ $cat }}</div>
+  </div>
+  <div class="post-card-body">
+    <h3 class="post-card-title">{{- .Title }}</h3>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <p class="post-card-summary">{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    {{- end }}
+    <div class="post-card-meta">
+      <span>{{ .ReadingTime }} min</span>
+      <span class="meta-dot">·</span>
+      <span>{{ .Date.Format "Jan 2" }}</span>
+    </div>
+  </div>
+</a>
+{{- end }}
+</div>
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">« Newer</a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">Older »</a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+{{- end }}{{/* end profileMode check */}}
+
+{{- end }}{{- /* end main */ -}}
