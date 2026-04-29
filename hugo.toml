@@ -130,6 +130,12 @@ buildExpired = false
   weight = 50
 
 [[menu.main]]
+  identifier = "nav-newsletter"
+  name = "Field Notes"
+  url = "/newsletter/"
+  weight = 55
+
+[[menu.main]]
   identifier = "nav-about"
   name = "About"
   url = "/about/"

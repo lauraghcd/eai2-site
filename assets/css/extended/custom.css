@@ -1099,6 +1099,39 @@ html[data-theme="dark"] .path-outcome {
   justify-content: flex-end;
 }
 
+/* ===== Newsletter landing page ===== */
+.newsletter-hero {
+  margin: 0 0 2rem;
+  padding: 1.75rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 26%, var(--border));
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 100% 0%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 34%),
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 8%, var(--entry)), var(--entry));
+}
+
+.newsletter-hero h2 {
+  margin: 0 0 0.85rem;
+  padding: 0;
+  border: 0;
+  font-size: clamp(1.55rem, 3vw, 2.1rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.newsletter-hero p:not(.section-kicker) {
+  max-width: 680px;
+  color: var(--secondary);
+  line-height: 1.65;
+}
+
+.newsletter-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
 .article-hero .breadcrumbs {
   margin-bottom: 1.25rem;
 }
