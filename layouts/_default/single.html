@@ -39,6 +39,48 @@
   </div>
   {{- end }}
 
+  {{- $current := . -}}
+  {{- $categories := .Params.categories | default (slice) -}}
+  {{- $related := slice -}}
+  {{- range where site.RegularPages "Section" "posts" -}}
+    {{- if and (ne .RelPermalink $current.RelPermalink) (gt (len (intersect (.Params.categories | default (slice)) $categories)) 0) -}}
+      {{- $related = $related | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $related = first 3 $related -}}
+
+  {{- if gt (len $related) 0 }}
+  <section class="continue-reading" aria-labelledby="continue-reading-title">
+    <div class="continue-reading-header">
+      <p class="section-kicker">Continue the thread</p>
+      <h2 id="continue-reading-title">Read Next</h2>
+    </div>
+    <div class="related-grid">
+      {{- range $related }}
+      {{- $rCat := index (.Params.categories | default (slice "default")) 0 -}}
+      {{- $rSlug := lower (replaceRE "[ &]+" "-" $rCat) -}}
+      <a class="related-card article-{{ $rSlug }}" href="{{ .RelPermalink }}">
+        <span class="related-card-cat">{{ $rCat }}</span>
+        <strong>{{ .Title }}</strong>
+        {{- with .Params.summary }}<span>{{ . }}</span>{{ end }}
+      </a>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+
+  <section class="research-updates" aria-label="Research updates">
+    <div>
+      <p class="section-kicker">Follow the field guide</p>
+      <h2>Track embodied AI without chasing every demo</h2>
+      <p>Use the RSS feed for new technical explainers, funding tracker updates, and model comparisons. For corrections or coverage suggestions, send a note to the editorial team.</p>
+    </div>
+    <div class="research-actions">
+      <a class="btn btn-primary" href="/index.xml">RSS Feed</a>
+      <a class="btn btn-secondary" href="/contact/">Suggest Topic</a>
+    </div>
+  </section>
+
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">

@@ -1,0 +1,18 @@
+{
+  "content": [
+    "content/posts",
+    "content/learning-path",
+    "content/categories",
+    "content/about"
+  ],
+  "layouts": [
+    "layouts/_default",
+    "layouts/partials"
+  ],
+  "styles": [
+    "assets/css/extended/custom.css"
+  ],
+  "public_output": "public",
+  "review_output": "docs/product-reviews"
+}
+

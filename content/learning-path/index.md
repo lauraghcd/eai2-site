@@ -7,18 +7,23 @@ ShowToc: true
 TocOpen: true
 ---
 
-This is your guided path through embodied AI. Each step builds on the previous one. Budget 2-4 weeks per step if you're learning part-time.
+<div class="path-hero">
+  <p class="section-kicker">5-stage field guide</p>
+  <h2>From embodied AI concepts to a deployable robot policy.</h2>
+  <p>This path is designed for software engineers moving into robotics. Each stage has one primary article, one practical checkpoint, and a clear reason to continue.</p>
+</div>
 
-## The Path
+<div class="path-rail" aria-label="Embodied AI learning stages">
+  <a class="path-node" href="#step-1-foundations"><span>1</span><strong>Foundations</strong><em>Concepts and vocabulary</em></a>
+  <a class="path-node" href="#step-2-tools--frameworks"><span>2</span><strong>Tools</strong><em>Simulators and libraries</em></a>
+  <a class="path-node" href="#step-3-sim-to-real-transfer"><span>3</span><strong>Sim-to-Real</strong><em>Bridge the gap</em></a>
+  <a class="path-node" href="#step-4-real-world-data-collection--training"><span>4</span><strong>Real Data</strong><em>Collect and train</em></a>
+  <a class="path-node" href="#step-5-edge-deployment"><span>5</span><strong>Edge Deploy</strong><em>Ship to hardware</em></a>
+</div>
 
-```
-Step 1          Step 2              Step 3           Step 4          Step 5
-Foundations  →  Tools & Frameworks  →  Sim-to-Real  →  Real Data  →  Edge Deploy
-   │                │                    │              │              │
-   ▼                ▼                    ▼              ▼              ▼
- Concepts        Simulators          Bridge the      Collect &      Ship to
- & Terms         & Libraries         gap              Train          hardware
-```
+<div class="path-outcome">
+  <strong>Expected outcome:</strong> by the end, you should understand the Perceive → Think → Act loop, choose a robot learning framework, reason about sim-to-real failures, collect real demonstrations, and deploy an optimized model on edge hardware.
+</div>
 
 ---
 
