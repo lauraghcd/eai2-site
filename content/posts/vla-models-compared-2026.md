@@ -29,6 +29,17 @@ Vision-Language-Action (VLA) models are the embodied AI equivalent of large lang
 
 The key insight: instead of hand-coding robot behaviors, you train a single neural network to map from "what the robot sees + what you tell it" to "what the robot does."
 
+## Field Update: Unitree G1 Is Becoming the Testbed
+
+The most important practical shift in spring 2026 is not just another named VLA model. It is the rise of **Unitree G1 as a common, affordable humanoid testbed** for manipulation research. That matters because the field needs repeatable results on the same physical platform, not only model cards and demo videos.
+
+Two recent papers show the pattern:
+
+- [A Rapid Deployment Pipeline for Autonomous Humanoid Grasping](https://arxiv.org/abs/2604.17258) uses foundation models for annotation, 3D reconstruction, and pose tracking, then streams commands to a real Unitree G1. The reported onboarding time for a new object drops from one to two days to about 30 minutes, with mAP@0.5 = 0.995 and sub-1.05 mm pose tracking precision.
+- [Active Stereo-Camera Outperforms Multi-Sensor Setup in ACT Imitation Learning](https://arxiv.org/abs/2603.28422) benchmarks 14 sensor combinations on a Unitree G1 with three-finger hands. The surprising result: a minimal active stereo-camera setup beat more complex sensor stacks in data-limited imitation learning, reaching 87.5% success on spatial generalization and 94.4% on structured manipulation.
+
+The takeaway for VLA buyers and builders: **model choice is no longer separable from robot platform, sensing stack, and deployment workflow**. A slower model with clean data collection and a calibrated robot can beat a larger model trapped behind a brittle integration pipeline. Unitree's own product lineup now explicitly includes [G1, R1, H1/H2, G1-D, and G1 application variants](https://www.unitree.com/mobile/news/), which makes the ecosystem increasingly relevant for hands-on VLA evaluation.
+
 ## The Three Contenders
 
 ### NVIDIA GR00T N1.6
