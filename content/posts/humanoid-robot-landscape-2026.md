@@ -1,6 +1,7 @@
 ---
 title: "The Humanoid Robot Landscape in 2026: Who's Shipping and Who's Still Demoing"
 date: 2026-04-15
+lastmod: 2026-05-07
 draft: false
 tags: ["humanoid robot", "Tesla Optimus", "Unitree", "AgiBot", "Figure AI", "industry"]
 categories: ["Robot Hardware"]
@@ -22,6 +23,11 @@ TocOpen: true
 The humanoid robot market hit $2.16 billion in 2026 and is on track to reach $15.26 billion by 2030 at a CAGR of 39.2%. But behind these impressive numbers lies a stark divide: companies that are **actually manufacturing and delivering robots** versus those still in the **perpetual demo stage**.
 
 This article cuts through the marketing noise to give you the real state of humanoid robotics in April 2026. For a head-to-head of the three most-watched models, see our [Unitree G1 vs Figure 02 vs Optimus comparison](/posts/unitree-g1-vs-figure-02-vs-optimus/).
+
+<div class="source-box">
+<strong>Source notes:</strong>
+This landscape uses public company announcements, official product pages, deployment reports, and market estimates. Shipment counts and market-size figures should be treated as directional unless the company publishes audited figures. We separate confirmed shipping signals from demo-stage claims where possible.
+</div>
 
 ## The Shipping Tier
 

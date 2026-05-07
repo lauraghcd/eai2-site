@@ -1,6 +1,7 @@
 ---
 title: "5 Robot Learning Frameworks You Should Know in 2026"
 date: 2026-04-11
+lastmod: 2026-05-07
 draft: false
 tags: ["frameworks", "LeRobot", "Isaac Lab", "ROS 2", "MuJoCo", "tools"]
 categories: ["Tools & Frameworks"]
@@ -22,6 +23,11 @@ TocOpen: true
 </div>
 
 The robot learning ecosystem has matured significantly. Instead of building everything from scratch, you can now compose a stack from specialized frameworks. Here are the five you need to know.
+
+<div class="source-box">
+<strong>Source notes:</strong>
+Framework capabilities change quickly. This guide uses official documentation and repositories for Isaac Lab, LeRobot, MuJoCo, ROS 2, and Gymnasium Robotics. Always check the current docs, supported hardware, and license terms before choosing a production stack.
+</div>
 
 ## 1. NVIDIA Isaac Lab
 

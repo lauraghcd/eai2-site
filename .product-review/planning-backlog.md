@@ -2,8 +2,8 @@
 
 ## Promote
 
-- Add visible source/citation blocks to more high-intent comparison and market pages.
-- Expand remaining thin high-intent articles: `open-source-humanoid-projects`.
+- Add visible source/citation blocks to the remaining high-intent pages without source boxes.
+- Expand remaining thin pages: `edge-ai-robot-deployment`, `diffusion-policy-explained`, `robot-safety-standards-2026`.
 - Add a lightweight update/correction note pattern for articles that materially change.
 
 ## Keep Warm
@@ -11,6 +11,7 @@
 - Add newsletter once P002 is fully unblocked.
 - Add category knowledge maps after article-end continuation is live.
 - Add Search Console / Analytics evidence once available.
+- Add stronger personal/editor identity if AdSense returns a quality or transparency rejection.
 
 ## Defer
 

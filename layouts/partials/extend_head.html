@@ -30,6 +30,10 @@
     "@type": "Organization",
     "name": {{ site.Title | jsonify }},
     "url": {{ site.BaseURL | jsonify }},
+    "email": "contact@eai2.cloud",
+    "sameAs": [
+      "https://github.com/lauraghcd/eai2-site"
+    ],
     "logo": {
       "@type": "ImageObject",
       "url": {{ (printf "%sfavicon.svg" site.BaseURL) | jsonify }}
@@ -62,6 +66,9 @@
     }{{- if eq .Kind "page" }},
     {{- $cat := index (.Params.categories | default (slice "Articles")) 0 -}}
     {{- $catSlug := lower (replaceRE "[ &]+" "-" $cat) }}
+    {{- if eq $cat "Tools & Frameworks" -}}
+      {{- $catSlug = "tools-and-frameworks" -}}
+    {{- end -}}
     {
       "@type": "ListItem",
       "position": 2,
@@ -100,6 +107,10 @@
   "publisher": {
     "@type": "Organization",
     "name": {{ site.Title | jsonify }},
+    "email": "contact@eai2.cloud",
+    "sameAs": [
+      "https://github.com/lauraghcd/eai2-site"
+    ],
     "logo": {
       "@type": "ImageObject",
       "url": {{ (printf "%sfavicon.svg" site.BaseURL) | jsonify }}

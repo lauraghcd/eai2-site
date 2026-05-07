@@ -1,6 +1,7 @@
 ---
 title: "7 Open-Source Humanoid Robot Projects You Can Build or Contribute To"
 date: 2026-04-02
+lastmod: 2026-05-07
 draft: false
 tags: ["open source", "DIY", "humanoid robot", "community", "projects"]
 categories: ["Robot Hardware"]
@@ -21,11 +22,23 @@ TocOpen: true
 
 You don't need a $100K budget to work with humanoid robots. The open-source community has produced remarkable projects ranging from affordable full builds to sophisticated software frameworks. Here are seven worth your time.
 
+## How This List Was Selected
+
+This list is not a generic directory. A project had to satisfy at least two of the following criteria:
+
+- public documentation or source code is available
+- the project can be built, simulated, or extended by an outside team
+- there is a real community, lab, or company maintaining it
+- the project helps with a concrete robotics workflow such as manipulation data collection, simulation, or VLA evaluation
+
+That means a fully commercial robot with no SDK is excluded, even if it is more capable. It also means some projects are included as software or research infrastructure rather than complete humanoid bodies.
+
 ## Hardware Projects
 
 ### 1. InMoov — The Original Open-Source Humanoid
 
-**What:** Full-size humanoid robot, 3D-printable
+**What:** Full-size humanoid robot, 3D-printable  
+**Official source:** [inmoov.fr](https://inmoov.fr/)
 **Cost:** ~$1,500-3,000 in parts
 **License:** CC-BY-NC
 
@@ -37,7 +50,8 @@ The granddaddy of open-source humanoids. InMoov has been around since 2012 and h
 
 ### 2. Stompy by K-Scale Labs
 
-**What:** Open-source bipedal humanoid designed for AI research
+**What:** Open-source bipedal humanoid designed for AI research  
+**Official source:** [K-Scale documentation](https://docs.kscale.dev/docs/getting-started)
 **Cost:** ~$10,000-15,000 in parts
 **License:** MIT
 
@@ -47,7 +61,8 @@ A serious research platform. Stompy is designed from the ground up for VLA model
 
 ### 3. Koch v1.1 — Open-Source Robot Arm
 
-**What:** Low-cost 6-DOF robot arm for manipulation research
+**What:** Low-cost 6-DOF robot arm for manipulation research  
+**Official source:** [Hugging Face LeRobot](https://github.com/huggingface/lerobot)
 **Cost:** ~$500 in parts
 **License:** Apache 2.0
 
@@ -60,6 +75,7 @@ Not a humanoid, but essential for manipulation research. Koch is the standard op
 ### 4. LeRobot (Hugging Face)
 
 **What:** End-to-end robot learning framework
+**Official source:** [github.com/huggingface/lerobot](https://github.com/huggingface/lerobot)
 **License:** Apache 2.0
 **GitHub Stars:** 15K+
 
@@ -70,6 +86,7 @@ Already covered in our [tutorial](/posts/lerobot-tutorial-getting-started/), but
 ### 5. OpenVLA
 
 **What:** Open-source Vision-Language-Action foundation model
+**Official source:** [github.com/openvla/openvla](https://github.com/openvla/openvla)
 **License:** MIT
 **Models available:** 7B, 3B, 1B variants
 
@@ -80,6 +97,7 @@ The community's answer to proprietary VLA models like GR00T and pi0. Trained on 
 ### 6. MuJoCo Menagerie
 
 **What:** Collection of high-quality robot simulation models
+**Official source:** [google-deepmind/mujoco_menagerie](https://github.com/google-deepmind/mujoco_menagerie)
 **License:** Apache 2.0
 
 A curated set of robot models for MuJoCo, including humanoid robots (Unitree G1, H1), robot arms (UR5, Franka), and hands (Shadow, Allegro). These models are research-grade — accurate dynamics, proper collision geometry, and calibrated actuator models.
@@ -89,6 +107,7 @@ A curated set of robot models for MuJoCo, including humanoid robots (Unitree G1,
 ### 7. Isaac Lab
 
 **What:** GPU-accelerated robot learning framework
+**Official source:** [isaac-sim.github.io/IsaacLab](https://isaac-sim.github.io/IsaacLab/)
 **License:** BSD-3
 **By:** NVIDIA
 
@@ -117,3 +136,22 @@ The embodied AI open-source community is smaller and more impactful per contribu
 5. **Hardware driver support** — Making LeRobot work with new robot platforms
 
 Every major robotics company monitors these open-source projects. Contributing is also one of the best ways to get hired in the field.
+
+## What to Verify Before You Build
+
+Before buying parts or committing lab time, check:
+
+| Check | Why it matters |
+|---|---|
+| Active repository commits | Abandoned robot code becomes expensive fast |
+| Bill of materials freshness | Parts disappear or change revisions |
+| Simulator parity | A robot that cannot be simulated slows policy work |
+| License terms | Non-commercial licenses may block startup or product use |
+| Safety envelope | Open-source does not mean safe for unsupervised operation |
+
+For most engineers, the best path is still incremental: start with a low-cost arm and LeRobot, move into MuJoCo or Isaac Lab, then decide whether a full humanoid platform is justified.
+
+<div class="source-box">
+<strong>Source notes:</strong>
+This page uses official project pages and repositories where possible: InMoov, K-Scale documentation, Hugging Face LeRobot, OpenVLA, Google DeepMind MuJoCo Menagerie, and NVIDIA Isaac Lab. Cost ranges are directional because open-source robot builds vary by region, parts availability, printer quality, and optional sensors.
+</div>

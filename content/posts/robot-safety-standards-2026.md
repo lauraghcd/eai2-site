@@ -1,6 +1,7 @@
 ---
 title: "Robot Safety Standards in 2026: What You Need to Know Before Deploying Humanoids"
 date: 2026-04-05
+lastmod: 2026-05-07
 draft: false
 tags: ["safety", "standards", "ISO", "regulation", "deployment"]
 categories: ["Industry"]
@@ -20,6 +21,11 @@ TocOpen: true
 </div>
 
 You've built a humanoid robot that works in the lab. Now you want to deploy it in a factory alongside human workers. What regulations apply? What certifications do you need? This guide covers the current state of robot safety standards in 2026 — the hardware side of the [humanoid robot landscape](/posts/humanoid-robot-landscape-2026/) most articles skip over.
+
+<div class="source-box">
+<strong>Source notes:</strong>
+This article is an engineering overview, not legal advice. Safety obligations vary by jurisdiction, workplace, robot class, and deployment mode. Use the official ISO/IEC standards, EU AI Act materials, local workplace-safety law, and qualified certification bodies before deploying robots around people.
+</div>
 
 ## The Regulatory Landscape
 

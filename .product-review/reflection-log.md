@@ -13,3 +13,10 @@
 - Corrective feedback: fix only repo-confirmed and rendered-confirmed trust gaps instead of claiming the approval blocker is solved.
 - Next deliberate focus: inspect content originality and source density if AdSense still has not moved by the four-week mark.
 - Behavior change next run: every trust-readiness recommendation must cite a visible page or rendered output.
+
+## 2026-05-07 five-iteration run
+
+- Review weakness this run: iteration velocity was high, but source-box improvements are still mostly article-level trust framing rather than line-by-line citation.
+- Corrective feedback: treat this as trust-surface strengthening, not proof of AdSense approval readiness.
+- Next deliberate focus: if review continues, move from source notes to primary-source citations inside claims.
+- Behavior change next run: prioritize pages with no external links and high factual density.

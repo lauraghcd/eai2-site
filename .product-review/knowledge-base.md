@@ -14,6 +14,7 @@ EAI2 should read less like a generic blog and more like an independent technical
 - The main learning weakness is that the Learning Path content exists but does not yet feel like a guided course.
 - AdSense/trust readiness now depends less on basic page presence and more on visible editorial responsibility: correct article metadata, source notes, editorial policy, and correction workflow.
 - A rendered bug in article date formatting produced impossible years such as `8086`; this is now fixed and should be guarded against in future rendered checks.
+- 2026-05-07 five-iteration run increased source-box coverage from 3 to 8 articles, added article-level trust links, fixed a Tools & Frameworks category slug risk, and repaired the homepage monthly tracker link.
 
 ## Competitive Pressure
 

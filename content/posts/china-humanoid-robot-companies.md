@@ -1,6 +1,7 @@
 ---
 title: "China's Humanoid Robot Companies: The Complete Guide for 2026"
 date: 2026-04-10
+lastmod: 2026-05-07
 draft: false
 tags: ["China", "AgiBot", "Unitree", "Fourier", "Galbot", "humanoid robot", "industry"]
 categories: ["Industry"]
@@ -20,6 +21,11 @@ TocOpen: true
 </div>
 
 China's humanoid robot sector logged over 200 equity financing events since the start of 2026, pulling in more than 30 billion yuan ($4.1B) in total — averaging roughly 330 million yuan ($45M) per day. This guide maps the key players and their strategies.
+
+<div class="source-box">
+<strong>Source notes:</strong>
+China humanoid robotics reporting often mixes official announcements, local media, investor briefings, and translated company materials. We treat shipment, funding, and RaaS pricing claims as market signals, not audited financial data, and update this page when stronger primary sources become available.
+</div>
 
 ## The Big Picture
 
