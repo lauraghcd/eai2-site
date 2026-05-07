@@ -124,6 +124,12 @@ buildExpired = false
   weight = 40
 
 [[menu.main]]
+  identifier = "nav-regions"
+  name = "Regions"
+  url = "/regions/"
+  weight = 45
+
+[[menu.main]]
   identifier = "nav-search"
   name = "Search"
   url = "/search/"

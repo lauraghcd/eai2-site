@@ -20,3 +20,10 @@
 - Corrective feedback: treat this as trust-surface strengthening, not proof of AdSense approval readiness.
 - Next deliberate focus: if review continues, move from source notes to primary-source citations inside claims.
 - Behavior change next run: prioritize pages with no external links and high factual density.
+
+## 2026-05-08 ten-iteration run
+
+- Review weakness this run: the first rendered check caught a broken newsletter issue URL, so the review should have verified Hugo routing before writing the report.
+- Corrective feedback: do not let frontmatter `url` intent or a passing Hugo build stand in for rendered URL evidence.
+- Next deliberate focus: verify homepage, newsletter, regions, and one updated article at desktop and mobile widths before claiming visual/product improvement.
+- Behavior change next run: include rendered-page evidence in the product-review report, not only in the final implementation summary.

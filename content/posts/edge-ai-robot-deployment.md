@@ -149,6 +149,13 @@ For battery-powered robots, you can dynamically switch between power modes based
 
 ## Further Reading
 
+- [NVIDIA Jetson Orin platform](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/)
+- [NVIDIA TensorRT documentation](https://docs.nvidia.com/deeplearning/tensorrt/index.html)
+- [TensorRT quantized types documentation](https://docs.nvidia.com/deeplearning/tensorrt/10.13.0/inference-library/work-quantized-types.html)
 - [Getting Started with Embodied AI](/posts/getting-started-embodied-ai-2026/)
 - [5 Robot Learning Frameworks](/posts/robot-learning-frameworks-2026/)
 - [Sim-to-Real Transfer Guide](/posts/sim-to-real-transfer-guide/)
+
+<div class="source-box">
+<strong>Source note:</strong> Hardware and quantization claims should be checked against the target Jetson module, TensorRT version, model architecture, thermal envelope, and camera pipeline. Vendor TOPS numbers are not a substitute for sustained robot workload tests.
+</div>

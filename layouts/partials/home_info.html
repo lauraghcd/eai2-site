@@ -5,6 +5,7 @@
 {{- $tools := len (where site.RegularPages "Params.categories" "intersect" (slice "Tools & Frameworks")) -}}
 {{- $industry := len (where site.RegularPages "Params.categories" "intersect" (slice "Industry")) -}}
 {{- $latest := first 3 (where site.RegularPages "Section" "posts") -}}
+{{- $totalPages := len site.Pages -}}
 
 <section class="home-atlas" aria-label="EAI2 field atlas">
   <div class="home-hero">
@@ -21,6 +22,7 @@
         <a href="/learning-path/" class="btn btn-primary">Start Learning -></a>
         <a href="/categories/" class="btn btn-secondary">Browse Topics</a>
         <a href="/newsletter/" class="btn btn-secondary">Field Notes</a>
+        <a href="/regions/" class="btn btn-secondary">Global Map</a>
       </div>
       <div class="hero-stats" aria-label="Site stats">
         <div class="stat">
@@ -32,7 +34,7 @@
           <span class="stat-label">Areas</span>
         </div>
         <div class="stat">
-          <span class="stat-value">196</span>
+          <span class="stat-value">{{ $totalPages }}</span>
           <span class="stat-label">Pages</span>
         </div>
       </div>
@@ -118,9 +120,9 @@
 
 <section class="home-feature-row" aria-label="Featured paths">
   <a class="home-feature home-feature--newsletter" href="/newsletter/">
-    <span>Newsletter</span>
+    <span>Daily signals</span>
     <strong>EAI2 Field Notes</strong>
-    <em>Weekly briefing on funding, model shifts, robot data, and deployment reality.</em>
+    <em>Embodied AI briefings, RSS updates, and a public archive connected to the field guide.</em>
   </a>
   <a class="home-feature" href="/learning-path/">
     <span>Start here</span>
@@ -131,6 +133,11 @@
     <span>Monthly tracker</span>
     <strong>What is actually shipping?</strong>
     <em>Follow funding, pilots, robot-hours, and strategic investors without chasing every demo.</em>
+  </a>
+  <a class="home-feature" href="/regions/">
+    <span>Global map</span>
+    <strong>Beyond China and the U.S.</strong>
+    <em>Track Japan, Korea, Germany, India, and Middle East physical AI signals by local context.</em>
   </a>
 </section>
 

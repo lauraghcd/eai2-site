@@ -150,3 +150,15 @@ The sim-to-real gap is shrinking but not disappearing. Key research frontiers in
 - **Adaptive policies** — Policies that detect and compensate for sim-real mismatch at runtime
 
 The goal isn't zero gap — it's a gap small enough that a few real-world demonstrations can close it. Once the policy is closing that gap on real hardware, the next challenge is squeezing it onto the robot's onboard compute — see our [edge AI deployment guide](/posts/edge-ai-robot-deployment/) for that side of the problem.
+
+## Source Base
+
+- [NVIDIA Isaac Lab](https://developer.nvidia.com/isaac/lab)
+- [NVIDIA Isaac Lab documentation](https://isaac-sim.github.io/IsaacLab/)
+- [MuJoCo official documentation](https://mujoco.readthedocs.io/)
+- [MuJoCo Menagerie](https://github.com/google-deepmind/mujoco_menagerie)
+- [Hugging Face LeRobot repository](https://github.com/huggingface/lerobot)
+
+<div class="source-box">
+<strong>Source note:</strong> Sim-to-real results depend heavily on robot mechanics, camera placement, contact conditions, and data quality. Use the techniques here as a deployment checklist, then validate with real robot trials before trusting any success-rate target.
+</div>

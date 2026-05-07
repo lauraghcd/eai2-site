@@ -133,3 +133,14 @@ Use a PDDL planner (like Fast Downward) to generate the action sequence, then di
 The neurosymbolic VLA paradigm is a reminder that in engineering, the right architecture often matters more than the right scale. For robot control — where tasks have inherent symbolic structure — adding that structure explicitly is currently a better bet than hoping a larger neural network will discover it implicitly.
 
 Whether this continues to hold as VLA models scale to 70B+ remains to be seen. But for 2026 production robotics, where edge deployment and reliability matter, neurosymbolic approaches are the pragmatic choice.
+
+## Source Base
+
+- [NS-VLA: Towards Neuro-Symbolic Vision-Language-Action Models](https://arxiv.org/abs/2603.09542)
+- [Planning.wiki PDDL reference](https://planning.wiki/ref)
+- [Fast Downward planner](https://www.fast-downward.org/)
+- [OpenVLA paper](https://arxiv.org/abs/2406.09246)
+
+<div class="source-box">
+<strong>Source note:</strong> Neurosymbolic robot-control claims are still early-stage and benchmark-sensitive. Treat success rates as evidence about specific task suites and evaluation protocols, not universal proof that symbolic planning will dominate every VLA setting.
+</div>

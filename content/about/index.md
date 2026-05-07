@@ -32,7 +32,13 @@ We bridge that gap — combining research analysis, product comparisons, and eng
 
 ## Stay Updated
 
-Subscribe to our [RSS feed](/index.xml) to get new articles as they publish.
+Follow [EAI² Field Notes](/newsletter/) for daily signals and weekly field-guide updates, or subscribe to the [RSS feed](/index.xml) if you prefer a no-email workflow.
+
+## Global Coverage
+
+EAI² is starting from English technical coverage, but embodied AI is not only a U.S. and China story. Japan, South Korea, Germany, India, and the Middle East each have different robotics signals, source languages, deployment contexts, and compliance requirements.
+
+Read the current [Global Regions and Languages](/regions/) map for the localization roadmap.
 
 ## Editorial Policy
 

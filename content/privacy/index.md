@@ -6,7 +6,7 @@ summary: "Privacy Policy for EAI² — Embodied AI Intelligence"
 ShowToc: false
 ---
 
-*Last updated: April 17, 2026*
+*Last updated: May 8, 2026*
 
 ## Introduction
 
@@ -24,13 +24,14 @@ When you visit our Site, we automatically receive:
 
 ### Information You Provide
 
-We do not require account registration. The Site does not collect personally identifiable information unless you voluntarily provide it (e.g., by contacting us via email).
+We do not require account registration. The Site does not collect personally identifiable information unless you voluntarily provide it, such as by contacting us via email or requesting Field Notes updates.
 
 ## How We Use Information
 
 - To analyze Site usage and improve content quality
 - To serve relevant advertisements through Google AdSense
 - To respond to inquiries you send us
+- To send Field Notes updates if you explicitly ask to subscribe by email
 
 ## Third-Party Services
 
@@ -50,6 +51,10 @@ We may use Google Analytics to understand Site usage patterns. Google Analytics 
 ### Affiliate Links
 
 Some pages on this Site contain affiliate links. If you click an affiliate link and make a purchase, we may receive a commission at no additional cost to you. This helps support the Site. We only recommend products and services we believe are valuable.
+
+### Newsletter and External Subscription Tools
+
+EAI² Field Notes is currently free and does not operate a paid newsletter. If we add an external subscription tool later, that tool may process your email address, subscription status, and delivery analytics under its own privacy terms. We will update this policy and the newsletter page before using a third-party tool for subscriber collection.
 
 ## Cookies
 

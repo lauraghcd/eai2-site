@@ -141,5 +141,11 @@ For most manipulation tasks running at 10-30Hz, current Diffusion Policy impleme
 ## Further Reading
 
 - [Original paper: Diffusion Policy (Chi et al., 2023)](https://diffusion-policy.cs.columbia.edu/)
+- [Diffusion Policy arXiv paper](https://arxiv.org/abs/2303.04137)
+- [Hugging Face LeRobot repository](https://github.com/huggingface/lerobot)
 - [5 Robot Learning Frameworks You Should Know](/posts/robot-learning-frameworks-2026/)
 - [VLA Models Compared](/posts/vla-models-compared-2026/)
+
+<div class="source-box">
+<strong>Source note:</strong> This guide is grounded in the original Diffusion Policy project, the arXiv paper by Chi et al., and the LeRobot implementation ecosystem. Performance guidance should be validated on the target robot and dataset before production use.
+</div>
