@@ -1,50 +1,65 @@
 ---
-title: "Global Regions and Languages for Physical AI"
+title: "Physical AI Around the World"
 layout: "single"
 url: "/regions/"
-summary: "A practical regional map for embodied AI coverage: where humanoid robotics and physical AI are becoming locally important, and which languages EAI2 should support first."
+summary: "A reader-facing map of where embodied AI and humanoid robotics are moving fastest, what each region is good at, and what signals to watch."
 ShowToc: true
 TocOpen: true
 ---
 
 <div class="tldr">
-<div class="tldr-label">Regional strategy</div>
+<div class="tldr-label">Why this page exists</div>
 
-- **Start with English + Chinese** for founder operation and broad technical coverage.
-- **Add Japanese next** because Japan has a strong robotics base and explicit physical AI policy/research framing.
-- **Keep Korean and German warm** because Korea and Germany have industrial humanoid signals tied to Hyundai/Boston Dynamics, Bosch, NEURA, Siemens, and factory automation.
-- **Defer paid-localization complexity** until traffic or subscribers prove demand by region.
+- **Humanoid robotics is not one market.** The U.S., China, Japan, Korea, Germany, India, and the Middle East are moving for different reasons.
+- **Readers need context, not just headlines.** A robot demo means different things in a factory automation region, a supply-chain region, or a government-backed investment region.
+- **Use this page as a map.** Start here when you want to understand which regional signals matter and which EAI² guides to read next.
 
 </div>
 
-EAI² should not translate everything just because it can. Multilingual coverage is valuable when it helps readers understand local robotics ecosystems, policy signals, deployment environments, and source material that English-only coverage misses.
+Most embodied AI coverage over-focuses on U.S. foundation model labs and Chinese humanoid hardware companies. Those two regions matter, but they do not explain the whole field. Japan has deep robotics demand and research policy momentum. South Korea connects robotics to manufacturing and Hyundai/Boston Dynamics. Germany and the DACH region matter because industrial automation is where many robots will first prove economic value.
 
-## Priority Regions
+This page is a practical map for readers who want to know **where to look, why it matters, and what to read next**.
 
-| Priority | Region | Local language | Why it matters now | Recommended EAI² move |
-|---|---|---|---|---|
-| 1 | Global / U.S. | English | Most research papers, model releases, startup funding, and robotics infrastructure are still easiest to follow in English. | Keep English as the canonical field-guide layer. |
-| 1 | China | Chinese | Deep humanoid supply chain, fast product cycles, strong local media coverage, and major robot hardware vendors. | Add Chinese summaries and China-specific company/operator context. |
-| 1 | Japan | Japanese | Long robotics history, industrial automation base, aging-society demand, and explicit physical AI research agenda. | Add a Japanese regional page before translating the whole site. |
-| 2 | South Korea | Korean | Hyundai/Boston Dynamics strategy, manufacturing context, and national interest in AI robotics. | Track Korean official sources and prepare a Korean landing page. |
-| 2 | Germany / DACH | German | Industrial automation, Bosch/NEURA/Siemens signals, and EU regulation/consent complexity. | Add German regional coverage only with GDPR/CMP readiness. |
-| 3 | India | English, later Hindi | Early humanoid startup signals and large automation demand, but English can cover the first stage. | Keep as English regional coverage first. |
-| 3 | Middle East | English, later Arabic | Robotics investment and smart-city deployment interest, but evidence quality varies. | Track selectively; do not localize until stronger demand appears. |
+## Regional Signal Map
 
-## Coverage Standard
+| Region | Why it matters to readers | Signals to watch | Read next |
+|---|---|---|---|
+| United States | Foundation models, robot learning labs, venture funding, and general-purpose robotics companies often surface here first. | VLA model releases, data partnerships, warehouse/factory pilots, funding rounds, safety claims. | [VLA Models Compared](/posts/vla-models-compared-2026/) |
+| China | Fast humanoid hardware cycles, supply-chain density, aggressive pricing, and public demos from major robotics companies. | Unit economics, production volume, component supply chains, export posture, real deployments vs showroom demos. | [China Humanoid Robot Companies](/posts/china-humanoid-robot-companies/) |
+| Japan | Long robotics history, aging-society demand, industrial automation culture, and explicit physical AI research framing. | Government research programs, eldercare pilots, factory automation, university-industry labs. | [Humanoid Robot Landscape 2026](/posts/humanoid-robot-landscape-2026/) |
+| South Korea | Hyundai/Boston Dynamics, electronics manufacturing, factory automation, and national robotics ambition make Korea strategically important. | Hyundai robotics strategy, logistics pilots, manufacturing integration, Korean-language policy signals. | [Robot Data Collection Methods](/posts/robot-data-collection-methods-2026/) |
+| Germany / DACH | Industrial automation, Bosch, Siemens, NEURA, and factory-floor deployment make this a key proving ground for practical physical AI. | Industrial humanoid trials, safety standards, integration with automation stacks, GDPR/AI Act compliance. | [Robot Safety Standards 2026](/posts/robot-safety-standards-2026/) |
+| India | Large automation demand, software talent, and early humanoid startup signals make India worth watching, even if the ecosystem is earlier. | Local robotics startups, service robots, manufacturing automation, English-language technical hiring. | [Open-Source Humanoid Projects](/posts/open-source-humanoid-projects/) |
+| Middle East | Investment capacity, smart-city programs, and public-sector robotics pilots can create early deployment demand. | Government programs, logistics/security pilots, imported humanoid platforms, proof of repeat usage. | [Embodied AI Funding Tracker](/posts/embodied-ai-funding-tracker-2026/) |
 
-Every regional page should answer five questions:
+## How to Judge a Regional Robotics Signal
 
-1. Which local companies, labs, or industrial buyers matter?
-2. What is actually deployed, piloted, funded, or regulated?
-3. Which local-language sources should be watched?
-4. What would an engineer or strategy reader miss if they only read English?
-5. What privacy, advertising, or subscription compliance changes would local operation require?
+A regional announcement is useful only if it answers at least one of these questions:
+
+1. **Deployment:** Is the robot doing repeat work outside a demo stage?
+2. **Data:** Is the operator collecting real robot-hours that can improve the model?
+3. **Cost:** Is there evidence of manufacturable cost, maintenance cost, or labor substitution?
+4. **Regulation:** Are safety, privacy, or workplace rules likely to slow deployment?
+5. **Supply chain:** Does the region have a hardware, sensor, actuator, or integration advantage?
+
+## What This Means for Different Readers
+
+### Engineers
+
+Use the regional map to understand what constraints matter in each market. A Korea or Germany signal often implies factory integration and safety requirements. A China signal may imply hardware cost and production speed. A U.S. signal may imply model architecture, data, or funding.
+
+### Strategy Readers
+
+Use this page to separate hype cycles from deployment markets. The most important question is not "which country has the best demo?" but "where can robots become economically repeatable first?"
+
+### Founders and Operators
+
+Use the regional differences to decide where to benchmark. China may set hardware price expectations. Germany may set industrial safety expectations. The U.S. may set model and funding expectations. Japan and Korea may show which deployment categories are culturally and industrially ready.
 
 ## Source Base
 
 <div class="source-box">
-<strong>Primary and official sources used for this regional strategy:</strong>
+<strong>Primary and official sources used for this regional map:</strong>
 <ul>
   <li><a href="https://www.jst.go.jp/crds/report/CRDS-FY2025-SP-01.html">JST CRDS Physical AI Systems proposal</a></li>
   <li><a href="https://www.hyundai.com/content/hyundai/worldwide/en/newsroom/detail/hyundai-motor-group-announces-ai-robotics-strategy-to-lead-human-centered-robotics-era-at-ces-2026-0000001100.html">Hyundai Motor Group AI Robotics Strategy at CES 2026</a></li>
@@ -54,8 +69,6 @@ Every regional page should answer five questions:
 </ul>
 </div>
 
-## Compliance Note
+## Follow the Map
 
-Language support is not the same thing as local market entry. The compliance risk rises when EAI² starts targeting a region with local subscriptions, paid products, advertising personalization, analytics, or stored personal data.
-
-For Europe and German-language coverage, GDPR and Google consent requirements should be treated as a launch condition before any active subscriber collection or advertising personalization. For Japan and Korea, privacy notices and email consent language should be updated before collecting local subscribers.
+Regional coverage will be expanded through [EAI² Field Notes](/newsletter/) and deeper company/market guides. If you have a source-backed regional signal, send it through the [Contact page](/contact/).
