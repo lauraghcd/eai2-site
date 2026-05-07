@@ -134,3 +134,8 @@ The VLA space is evolving rapidly. Key trends to watch:
 - **Memory-augmented VLA** — persistent memory for long-horizon tasks
 
 We'll be tracking all of these developments. Subscribe to stay updated.
+
+<div class="source-box">
+<strong>Source notes and update policy:</strong>
+This comparison is maintained as a technical field guide, not a vendor ranking. It draws on official model releases, project documentation, public research papers, and deployment reports. The May 2026 update added Unitree G1 field evidence from arXiv papers on autonomous humanoid grasping and ACT imitation learning. If a benchmark or model release changes, send a correction through the contact page.
+</div>

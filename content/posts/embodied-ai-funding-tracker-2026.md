@@ -212,6 +212,8 @@ For the next monthly update, the most useful additions would be:
 
 ## Source Notes
 
+<div class="source-box">
+
 This page uses public reporting and should be treated as an operating tracker, not a financial database. Useful sources for this update include:
 
 - China Daily on X Square Robot's nearly RMB 2B / $276M Series B
@@ -220,6 +222,8 @@ This page uses public reporting and should be treated as an operating tracker, n
 - Public robotics funding summaries from sector-specific trackers such as GrabaRobot and Robotomated
 
 If you maintain a robotics company and want a round corrected or added, send the source link through the contact page.
+
+</div>
 
 ## Previous Coverage
 

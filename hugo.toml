@@ -56,7 +56,7 @@ buildExpired = false
 
   [params.footer]
     hideCopyright = false
-    text = "[About](/about/) · [Contact](/contact/) · [Privacy](/privacy/)"
+    text = "[About](/about/) · [Editorial Policy](/editorial-policy/) · [Contact](/contact/) · [Privacy](/privacy/)"
 
   [params.fuseOpts]
     isCaseSensitive = false

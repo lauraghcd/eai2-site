@@ -2,19 +2,18 @@
 
 ## Promote
 
-- Add article-end continuation and update CTA to reduce dead-end reading sessions.
-- Upgrade Learning Path into a visual course-like journey.
-- Expand remaining thin high-intent articles: `vla-models-compared-2026`, `open-source-humanoid-projects`.
+- Add visible source/citation blocks to more high-intent comparison and market pages.
+- Expand remaining thin high-intent articles: `open-source-humanoid-projects`.
+- Add a lightweight update/correction note pattern for articles that materially change.
 
 ## Keep Warm
 
-- Add newsletter once P002 is explicitly approved.
+- Add newsletter once P002 is fully unblocked.
 - Add category knowledge maps after article-end continuation is live.
-- Add source/citation blocks to comparison and funding pages.
+- Add Search Console / Analytics evidence once available.
 
 ## Defer
 
 - Comments system.
 - User feedback widget.
 - Chinese localization.
-

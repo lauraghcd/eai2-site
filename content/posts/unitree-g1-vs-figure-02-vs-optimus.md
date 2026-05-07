@@ -133,3 +133,8 @@ History suggests that the winner in robotics won't be the one with the best tech
 | Large manufacturer | Wait for Optimus | Scale economics will eventually win |
 | Startup building on humanoids | Unitree G1 + custom | Fastest iteration cycle |
 | Investor evaluating the space | Watch all three | Different strategies, unclear winner |
+
+<div class="source-box">
+<strong>Source notes:</strong>
+Robot specifications change quickly and some vendors disclose more than others. This comparison uses public product pages, official announcements, deployment reports, and conservative estimates where direct numbers are unavailable. Treat undisclosed price and availability ranges as directional, not procurement quotes. Send corrections through the contact page.
+</div>

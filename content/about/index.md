@@ -33,3 +33,7 @@ We bridge that gap — combining research analysis, product comparisons, and eng
 ## Stay Updated
 
 Subscribe to our [RSS feed](/index.xml) to get new articles as they publish.
+
+## Editorial Policy
+
+EAI² is an independent technical publication. We use source-based reporting, AI-assisted drafting, and human editorial review. Read the full [Editorial Policy](/editorial-policy/) for our source standards, correction process, AI disclosure, and advertising independence.

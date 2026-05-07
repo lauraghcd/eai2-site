@@ -883,6 +883,27 @@ html[data-theme="dark"] .terms-tags a {
   font-weight: 600;
 }
 
+.source-box {
+  margin: 2rem 0;
+  padding: 1rem 1.15rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--border));
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 5%, var(--entry)), var(--entry));
+  color: var(--content);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+.source-box strong {
+  color: var(--primary);
+}
+
+.source-box ul {
+  margin-bottom: 0;
+}
+
 /* In dark theme, soften the gradient */
 html[data-theme="dark"] .tldr {
   background: linear-gradient(135deg,
