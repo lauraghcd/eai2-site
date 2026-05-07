@@ -27,3 +27,10 @@
 - Corrective feedback: do not let frontmatter `url` intent or a passing Hugo build stand in for rendered URL evidence.
 - Next deliberate focus: verify homepage, newsletter, regions, and one updated article at desktop and mobile widths before claiming visual/product improvement.
 - Behavior change next run: include rendered-page evidence in the product-review report, not only in the final implementation summary.
+
+## 2026-05-08 visual five-iteration run
+
+- Review weakness this run: the visual pass improved the highest-visibility surfaces, but did not yet fully normalize older post-list/category card styling.
+- Corrective feedback: visual review should separate homepage polish from whole-site design-system consistency.
+- Next deliberate focus: audit list/card/category surfaces after homepage fixes, especially color gradients and large decorative visuals.
+- Behavior change next run: capture before/after screenshots when the user specifically calls out visual quality.

@@ -16,6 +16,7 @@ EAI2 should read less like a generic blog and more like an independent technical
 - A rendered bug in article date formatting produced impossible years such as `8086`; this is now fixed and should be guarded against in future rendered checks.
 - 2026-05-07 five-iteration run increased source-box coverage from 3 to 8 articles, added article-level trust links, fixed a Tools & Frameworks category slug risk, and repaired the homepage monthly tracker link.
 - 2026-05-08 ten-iteration run shifted product emphasis from AdSense-only readiness toward standalone value: Field Notes now has a clear archive/subscription/RSS model, one cleaned NewsAgent daily archive sample, `/regions/` for global language strategy, homepage navigation to regions, privacy support for email update requests, source boxes on four additional technical articles, and a dynamic homepage page-count stat.
+- 2026-05-08 visual five-iteration run reduced the strongest AI-template signals: bright cyan gradients, decorative grid background, large rounded cards, soft shadows, and slogan-heavy hero copy. The homepage now uses a quieter editorial palette, tighter typography, table-like knowledge panels, and fewer CTAs.
 
 ## Competitive Pressure
 
